@@ -1,0 +1,180 @@
+/*for top navbar */
+
+body{
+    background-color: black;
+    font: "Gill Sans";
+    color: white;
+}
+.header{
+    display: inline-block;
+    margin-left: 15vw;
+    margin-top: 10vh;
+    padding: 10px;
+    color: white;
+    font-size: 5vw;
+    font-weight: 100;
+    font-family: Verdana;
+    width: 35%;
+    overflow: auto;
+    text-shadow: 3px 3px grey;
+
+}
+.navbar{
+    display: block;
+    color: white;
+    font-family: monospace;
+    background-color: black;
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px #000000;
+}
+.navbar a{
+    font-family: sans-serif;
+    font-weight: bold;
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+.navbar a:hover{
+    box-shadow: 0px 2px whitesmoke;
+    font-weight: bolder;
+    transition: 0.5s;
+    color: #C0C0C0;
+}
+.navbar a.active{
+    color: #e4ba4e;
+}
+.container{
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(140deg,rgb(71,70,59),rgb(185,185,185),#b49636,rgb(183,180,180),#ffc404);
+    margin-bottom: 10px;
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes gradient{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.pagebreak{
+    display: block;
+    width: 100%;
+    height: 8vh;
+    background: linear-gradient(40deg,rgb(71,70,59),rgb(223,211,211),#ac8d27,rgb(100,97.97),#ffc609);
+    margin-bottom: 10px;
+    animation: gradient 7s ease infinite;
+    background-size: 400% 400%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contentbox{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    width: 90%;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+.contentbox h1{
+    font-family: 'Trebchet MS';
+    font-size: 30px;
+    color: white;
+    background-color: #ff8c00;
+    border-radius: 10px;
+    border-style: double;
+    border: 2px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30vw;
+    overflow: auto;
+}
+.contentbox:hover{
+    transition: 0.3s;
+    border: 2px solid grey;
+    box-shadow: 8px 8px 15px grey;
+    border-radius: 10px;
+}
+.customer{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+}
+.customer th{
+    box-shadow: 0px 1px white;
+    font-family: "Trenbuchet MS";
+    padding: 25px;
+    margin: 25px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.customer td{
+    font-family: verdana;
+    padding: 15px;
+    margin: 15px;
+    font-size: 14px;
+}
+.content{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.button{
+    align-self: center;
+    align-content: center;
+    font-family: verdana;
+    font-size: 14px;
+    background-color: #FF8c00;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 12px;
+    margin: 0px;
+    width: fit-content;
+}
+.button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px grey;
+    background-color: #ffc404;
+}
+.footer{
+    width: 100%;
+    display: block;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    font-style: normal;
+    background-color: black;
+    padding: 2px;
+    margin-top: 2px;
+}
+@media screen and (max-width:800px) {
+    .container{
+        width:100% /*when the viewport is 800px or smaller*/
+    }
+    input,textarea{
+        width: 80%;
+    }
+    .btn{
+        width: 30%;
+    }
+    
+}
